@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental Service</title>
+  <!--  FONT AWOUSME KA LINL -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- AOS KA CSS LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+  <!-- style hai html page ki link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER KE LIYE HAI -->
+  <header>
+    <div class="logo" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="900"
+      data-aos-delay="100">CarRental</div>
+    <nav>
+      <a href="#" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900"
+        data-aos-delay="100">Home</a>
+      <a href="Book Driving.html" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"
+        data-aos-delay="200">Book Rides</a>
+      <a href="#" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100"
+        data-aos-delay="300">Services</a>
+      <a href="#" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200"
+        data-aos-delay="400">About Us</a>
+      <a href="#" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300"
+        data-aos-delay="500">Contact</a>
+    </nav>
+    <div class="hamburger" id="manuop" onclick="openCloseHanBur()">☰</div>
+    <div class="menu" style="display: none;"> <!-- Initially hide the menu -->
+      <a href="#">Home</a>
+      <a href="#">Cars</a>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </div>
+
+  </header>
+
+
+  <!-- Hero First Section -->
+  <div id="mainHerosection">
+    <div id="detailsDiv">
+      <div class="firstdetailsdiv">
+        <h1 class="first details">Book Self-Drive &</h1>
+        <h1 class="details"> With-Driver Car</h1>
+
+        <h1 class="second details" id="types">Rental in indore</h1>
+      </div>
+      <p>Whether you're planning a road trip outside the city or looking for a convenient way to
+        cruise around when you're out of town, GoWith Car is here to ease your travel.</p>
+    </div>
+    <div id="imagediv">
+      <img src="/Images/caraa.png" data-aos="fade-left" data-aos-easing="linear"
+        data-aos-duration="3000" data-aos-offset="350">
+    </div>
+  </div>
+
+
+
+  <!-- Booking Section -->
+  <div class="form-container" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="600"
+    data-aos-offset="350">
+    <div class="driving-type">
+      <button class="active">Self Drive</button>
+      <button>With Driver</button>
+      <button>Tempo Traveller</button>
+    </div>
+    <form class="form">
+      <div class="form-group">
+        <label for="city">City</label>
+        <select id="city" required>
+          <option value="">Select City</option>
+          <option value="city1">City 1</option>
+          <option value="city2">City 2</option>
+        </select>
+        <span class="error-message">Please select a location..</span>
+      </div>
+      <div class="form-group">
+        <label for="pickup">Pickup Date & Time</label>
+        <input type="datetime-local" id="pickup" required>
+      </div>
+      <div class="form-group">
+        <label for="return">Return Date & Time</label>
+        <input type="datetime-local" id="return" required>
+      </div>
+    </form>
+    <button type="submit" class="search-button">Search</button>
+  </div>
+
+
+
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <div class="container">
+    <!-- Card 1 -->
+    <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-offset="350">
+      <img src="/Images/c1.png" id="car1" alt="Maruti Dzire">
+      <div class="content">
+        <h3>Maruti Dzire (2020)</h3>
+        <div class="details">
+          <span>⚙️ Manual</span>
+          <span>⛽ CNG + Petrol</span>
+          <span>🚘 20/km</span>
+          <span>👤 5 Persons</span>
+          <span>❄️ AC</span>
+        </div>
+        <div class="price">₹228/hr</div>
+        <div class="extra">Extra km fare - ₹12/hr</div>
+        <a href="Book Driving.html" class="btn" onclick="booking(document.getElementById('car1'))">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-offset="400">
+      <img src="/Images/c2.png" id="car2" alt="Maruti Fronx">
+      <div class="content">
+        <h3>Maruti Fronx (2023)</h3>
+        <div class="details">
+          <span>⚙️ Manual</span>
+          <span>⛽ Petrol</span>
+          <span>🚘 16/km</span>
+          <span>👤 5 Persons</span>
+          <span>❄️ AC</span>
+        </div>
+        <div class="price">₹248/hr</div>
+        <div class="extra">Extra km fare - ₹12/hr</div>
+        <a href="/Pages/Book Driving.html" class="btn"  onclick="booking(document.getElementById('car2'))">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-offset="400">
+      <img src="/Images/c3.png" id="car3" alt="Mahindra Thar">
+      <div class="content">
+        <h3>THAR RWD DIESEL (2025)</h3>
+        <div class="details">
+          <span>⚙️ Manual</span>
+          <span>⛽ Diesel</span>
+          <span>🚘 15/km</span>
+          <span>👤 4 Persons</span>
+          <span>❄️ AC</span>
+        </div>
+        <div class="price">₹396/hr</div>
+        <div class="extra">Extra km fare - ₹15/hr</div>
+        <a href="/Pages/Book Driving.html" class="btn" onclick="booking(document.getElementById('car3'))" >Book Now</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-offset="400">
+      <img src="/Images/c4.png" id="car4" alt="Toyota Innova">
+      <div class="content">
+        <h3>Toyota Innova (2021)</h3>
+        <div class="details">
+          <span>⚙️ Automatic</span>
+          <span>⛽ Petrol</span>
+          <span>🚘 12/km</span>
+          <span>👤 7 Persons</span>
+          <span>❄️ AC</span>
+        </div>
+        <div class="price">₹500/hr</div>
+        <div class="extra">Extra km fare - ₹15/hr</div>
+        <a href="/Pages/Book Driving.html" class="btn" onclick="booking(document.getElementById('car4'))">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card" data-aos="zoom-in-down" data-aos-duration="1300" data-aos-offset="350">
+      <img src="/Images/c5.png" id="car5" alt="Honda City">
+      <div class="content">
+        <h3>Honda City (2022)</h3>
+        <div class="details">
+          <span>⚙️ Automatic</span>
+          <span>⛽ Petrol</span>
+          <span>🚘 17/km</span>
+          <span>👤 5 Persons</span>
+          <span>❄️ AC</span>
+        </div>
+        <div class="price">₹350/hr</div>
+        <div class="extra">Extra km fare - ₹12/hr</div>
+        <a href="/Pages/Book Driving.html" class="btn" onclick="booking(document.getElementById('car5'))" >Book Now</a>
+      </div>
+    </div>
+
+    <div class="card" data-aos="zoom-in-down" data-aos-duration="1300" data-aos-offset="350">
+      <img src="/Images/c1.png" id="car6" alt="Toyota Corolla">
+      <div class="content">
+        <h3>Toyota Corolla (2022)</h3>
+        <div class="details">
+          <span>⚙️ Automatic</span>
+          <span>⛽ Petrol</span>
+          <span>🚘 18/km</span>
+          <span>👤 5 Persons</span>
+          <span>❄️ AC</span>
+        </div>
+        <div class="price">₹400/hr</div>
+        <div class="extra">Extra km fare - ₹10/hr</div>
+        <a href="/Pages/Book Driving.html" class="btn" onclick="booking(document.getElementById('car6'))" >Book Now</a>
+      </div>
+    </div>
+
+    <div class="card" data-aos="zoom-in-down" data-aos-duration="1300" data-aos-offset="350">
+      <img src="/Images/c2.png" id="car7" alt="Hyundai Elantra">
+      <div class="content">
+        <h3>Hyundai Elantra (2022)</h3>
+        <div class="details">
+          <span>⚙️ Automatic</span>
+          <span>⛽ Petrol</span>
+          <span>🚘 16/km</span>
+          <span>👤 5 Persons</span>
+          <span>❄️ AC</span>
+        </div>
+        <div class="price">₹450/hr</div>
+        <div class="extra">Extra km fare - ₹11/hr</div>
+        <a href="/Pages/Book Driving.html" class="btn" onclick="booking(document.getElementById('car7'))" >Book Now</a>
+      </div>
+    </div>
+
+    <div class="card" data-aos="zoom-in-down" data-aos-duration="1300" data-aos-offset="350">
+      <img src="/Images/c3.png" id="car8" alt="Ford Focus">
+      <div class="content">
+        <h3>Ford Focus (2022)</h3>
+        <div class="details">
+          <span>⚙️ Automatic</span>
+          <span>⛽ Petrol</span>
+          <span>🚘 19/km</span>
+          <span>👤 5 Persons</span>
+          <span>❄️ AC</span>
+        </div>
+        <div class="price">₹380/hr</div>
+        <div class="extra">Extra km fare - ₹9/hr</div>
+        <a href="/Pages/Book Driving.html" class="btn" onclick="booking(document.getElementById('car8'))" >Book Now</a>
+      </div>
+    </div>
+
+    <div class="card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
+      data-aos-offset="350">
+      <img src="/Images/c4.png" id="car9" alt="Mazda 3">
+      <div class="content">
+        <h3>Mazda 3 (2022)</h3>
+        <div class="details">
+          <span>⚙️ Automatic</span>
+          <span>⛽ Petrol</span>
+          <span>🚘 20/km</span>
+          <span>👤 5 Persons</span>
+          <span>❄️ AC</span>
+        </div>
+        <div class="price">₹420/hr</div>
+        <div class="extra">Extra km fare - ₹10/hr</div>
+        <a href="/Pages/Book Driving.html" class="btn" onclick="booking(document.getElementById('car9'))" >Book Now</a>
+      </div>
+    </div>
+
+    <div class="card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
+      data-aos-offset="350">
+      <img src="/Images/c5.png" id="car0" alt="Nissan Altima">
+      <div class="content">
+        <h3>Nissan Altima (2022)</h3>
+        <div class="details">
+          <span>⚙️ Automatic</span>
+          <span>⛽ Petrol</span>
+          <span>🚘 21/km</span>
+          <span>👤 5 Persons</span>
+          <span>❄️ AC</span>
+        </div>
+        <div class="price">₹440/hr</div>
+        <div class="extra">Extra km fare - ₹11/hr</div>
+        <a href="/Pages/Book Driving.html" class="btn" onclick="booking(document.getElementById('car0'))" >Book Now</a>
+      </div>
+    </div>
+
+    <div class="card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
+      data-aos-offset="350">
+      <img src="/Images/c6.png" id="car11" alt="Kia Forte">
+      <div class="content">
+        <h3>Kia Forte (2022)</h3>
+        <div class="details">
+          <span>⚙️ Automatic</span>
+          <span>⛽ Petrol</span>
+          <span>🚘 22/km</span>
+          <span>👤 5 Persons</span>
+          <span>❄️ AC</span>
+        </div>
+        <div class="price">₹460/hr</div>
+        <div class="extra">Extra km fare - ₹12/hr</div>
+        <a href="/Pages/Book Driving.html" class="btn" onclick="booking(document.getElementById('car11'))" >Book Now</a>
+      </div>
+    </div>
+
+    <div class="card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
+      data-aos-offset="350">
+      <img src="/Images/c7.png" id="car12" alt="Subaru Impreza">
+      <div class="content">
+        <h3>Subaru Impreza (2022)</h3>
+        <div class="details">
+          <span>⚙️ Automatic</span>
+          <span>⛽ Petrol</span>
+          <span>🚘 23/km</span>
+          <span>👤 5 Persons</span>
+          <span>❄️ AC</span>
+        </div>
+        <div class="price">₹480/hr</div>
+        <div class="extra">Extra km fare - ₹13/hr</div>
+        <a href="/Pages/Book Driving.html" class="btn" onclick="booking(document.getElementById('car12'))" >Book Now</a>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h2>About Us</h2>
+        <p>At Car Rental Co., we are committed to providing the best car rental services to ensure
+          you have a smooth and enjoyable journey. With a wide range of vehicles, flexible plans,
+          and excellent customer service, we are here to meet all your transportation needs.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section contact">
+        <h2>Contact Us</h2>
+        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+        <p><i class="fas fa-envelope"></i> info@carrentalco.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> 1234 Rental Lane, City, Country</p>
+      </div>
+
+      <div class="footer-section newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Get the latest updates and offers straight to your inbox.</p>
+        <form action="#" method="post">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Car Rental Co. | All rights reserved | <a href="#">Privacy Policy</a> | <a
+          href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+
+
+
+  <!-- AOS LIBRA KA SCRIPT LINK -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+
+  <!-- TYPE SCRIPT HAI JS KI -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#types', {
+      strings: [" Rental in indore", " Rental in Bhopal", " Rental in Jablpur", " Rental in Ujjain", " Rental in indore", " Rental in Bhopal", " Rental in indore"],
+      typeSpeed: 200,
+      loop: true,
+    });
+  </script>
+
+
+  <!-- main script.js -->
+  <script src="script.js"></script>
+  <script>
+    function booking(imageElement) {
+      console.log(imageElement);
+      alert("Booking for: " + imageElement.alt);
+      alert("Image Source: " + imageElement.src);
+
+      // Store data in sessionStorage
+      sessionStorage.setItem('carImageSrc', imageElement.src);
+      sessionStorage.setItem('carAlt', imageElement.alt);
+    }
+  </script>
+
+
+</body>
+
+</html>

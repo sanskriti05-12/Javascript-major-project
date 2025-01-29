@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Book.css">
+</head>
+
+<body>
+
+    <!-- Nanbar Ke Liye -->
+    <header>
+        <div class="logo" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="900"
+            data-aos-delay="100">CarRental</div>
+        <nav>
+            <a href="#" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900"
+                data-aos-delay="100">Home</a>
+            <a href="Bool.html" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1000" data-aos-delay="200">Book Rides</a>
+            <a href="#" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100"
+                data-aos-delay="300">Services</a>
+            <a href="#" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200"
+                data-aos-delay="400">About Us</a>
+            <a href="#" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300"
+                data-aos-delay="500">Contact</a>
+        </nav>
+        <div class="hamburger" id="manuop" onclick="openCloseHanBur()">☰</div>
+        <div class="menu" style="display: none;"> <!-- Initially hide the menu -->
+            <a href="#">Home</a>
+            <a href="#">Cars</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </header>
+
+
+    <div id="mainContainer">
+
+        <!-- Select The Drive Medium -->
+        <div id="DriveMediumDiv">
+            <h1 class="methodH1">Select Your Ride</h1>
+            <div id="MethodDiv">
+                <div id="MediumSelect">
+                    <img src="/Images/a1.png" alt="">
+                    <h3>Auto</h3>
+                </div>
+            </div>
+            <div id="MethodDiv">
+                <div id="MediumSelect">
+                    <img src="/Images/Bike.png" alt="">
+                    <h3>Bike</h3>
+                </div>
+            </div>
+            <div id="MethodDiv">
+                <div id="MediumSelect">
+                    <img src="/Images/Cab1.png" alt="">
+                    <h3>Car</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Information ke liye -->
+        <div id="userDtailedContainer">
+            <div id="detailsForm">
+                <h1 id="UserName">Vineet Singraul</h1>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div id="detailsForm">
+                <h1 id="UserEmail">Vineet@gmail.com</h1>
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div id="detailsForm">
+                <h1 id="UserNumber">+91 4567892345</h1>
+                <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+        </div>
+
+        <form>
+            <div id="DataPicDropMainDiv">
+
+                <div id="DataPicDrop">
+                    <div id="form1" class="form11">
+                        <label for="picup">Picup location</label>
+                        <input type="text" placeholder="Enter Location To Picup" id="picupForm">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <img src="/Images/arr.png" alt="" id="arr">
+
+                    <div id="form1"  class="form12">
+                        <label for="picup">Picup location</label>
+                        <input type="text" placeholder="Enter Location To Drop" id="dropForm">
+                        <i class="fa-solid fa-location-pin"></i>
+                    </div>
+
+                </div>
+
+            </div>
+        </form>
+
+
+        <!-- USER DETAIlED HAI -->
+        <form id="form">
+
+            <label for="name">Thise Your Selected Car :</label>
+            <div id="userDetails1">
+                <img src="" alt="" id="imageCar">
+                <div id="detailsofSelected">
+                    <h2 id="carName"></h2>
+                    <div id="det">
+                        <i class="fa-solid fa-money-bill"></i><span> Manual</span>
+                    </div>
+                    <div id="det">
+                        <i class="fa-solid fa-gas-pump"></i> <span>Petrol</span>
+                    </div>
+
+                    <div id="det">
+                        <i class="fa-solid fa-car"></i><span id="distance"> 20/km</span>
+                    </div>
+                    <div id="det">
+                        <i class="fa-solid fa-person"></i><span>5 Persons</span>
+                    </div>
+                    <div id="det">
+                        <i class="fa-solid fa-fan"></i><span> AC</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <label for="name">Enter Your Name :</label>
+            <div id="userDetails">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" id="name1">
+            </div>
+
+            <label for="name">Enter Your Number :</label>
+            <div id="userDetails">
+                <i class="fa-solid fa-mobile"></i>
+                <input type="text" id="number1">
+            </div>
+
+            <label for="name">Enter Your Age :</label>
+            <div id="userDetails">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" id="age1">
+            </div>
+
+            <label for="name">Enter Your Addhar Number:</label>
+            <div id="userDetails">
+                <i class="fa-solid fa-question"></i>
+                <input type="text" id="addhar1">
+            </div>
+
+            <label for="name">Price :</label>
+            <div id="userDetails">
+                <i class="fa fa-inr"></i>
+                <input type="number" value="300" id="rupay" readonly>
+            </div>
+
+            <label for="name">Enter Car Name :</label>
+            <div id="userDetails">
+                <i class="fa-solid fa-car"></i>
+                <input type="text" value="Maruti" id="Car">
+            </div>
+
+
+
+            <!-- <input type="submit" value="Book Your Ride" id="books" onclick="FillForm()"> -->
+            <button type="button" id="books" onclick="FillForm(event)"><a
+                    href="/Pages/Cards.html"></a>Book Your Ride</button>
+        </form>
+
+
+    </div>
+
+
+    <script src="./bookscript.js"></script>
+    <!-- <script src="bookscript.js"></script> -->
+    <script>
+        // when user click in button of Home.html card open card data in the Book ride.html 
+        let imageCar = document.getElementById('imageCar');
+        let carName = document.querySelector("#carName").innerHTML = sessionStorage.getItem('carAlt');
+        imageCar.src = sessionStorage.getItem('carImageSrc');
+        console.log("Booking for: " + sessionStorage.getItem('carAlt'));
+    </script>
+    <script>
+        let names = document.querySelector("#UserName").innerHTML = localStorage.getItem("Name");
+        document.querySelector("#UserEmail").innerHTML = localStorage.getItem("Email");
+        document.querySelector("#UserNumber").innerHTML = localStorage.getItem("Phone");
+        console.log(names);
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,525 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #ffeef8;
+    /* Soft pink background */
+    color: #3e2723;
+    /* Dark brown text for better contrast */
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d81b60;
+    color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fce4ec;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #f06292;
+    color: #3e2723;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background: #d81b60;
+    padding: 20px;
+    gap: 15px;
+}
+
+.menu a {
+    color: #fce4ec;
+}
+
+.menu a:hover {
+    background: #f06292;
+    color: #3e2723;
+}
+
+#mainContainer {
+    padding: 40px 20px;
+}
+
+#DriveMediumDiv {
+    text-align: center;
+    margin: 40px 0;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+#DriveMediumDiv h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ad1457;
+    text-transform: uppercase;
+}
+
+#MethodDiv {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+#MediumSelect {
+    border: 2px solid #ad1457;
+    border-radius: 12px;
+    width: 300px;
+    height: 260px;
+    cursor: pointer;
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: -1px -1px 20px #000000;
+    overflow: hidden;
+}
+
+#MediumSelect:hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: -1px -1px 20px #000000;
+}
+
+#MediumSelect img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+#MediumSelect:hover img {
+    transform: scale(1.1);
+}
+
+#MediumSelect h3 {
+    font-size: -0.8rem;
+    color: #ad1457;
+    margin-top: -20px;
+    word-spacing: 16px;
+    text-shadow: -1px -1px 2px rgb(52, 0, 0);
+    transform: scale(1.1);
+}
+
+#userDtailedContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 12px;
+    animation: fadeInUp 1.3s ease-in-out;
+}
+
+#detailsForm {
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ad1457;
+    border-radius: 12px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 6px 15px rgba(255, 20, 145, 0.793);
+    transform: translateY(-10px);
+}
+
+#detailsForm:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px);
+}
+
+#detailsForm h1 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #ad1457;
+}
+
+#detailsForm i {
+    font-size: 3rem;
+    color: #af0077;
+    margin-top: 10px;
+}
+
+
+
+
+/* +++++++++++++++++++++++ */
+form {
+    margin: 40px 0;
+}
+
+#DataPicDropMainDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 31px;
+    background: #fffffffc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#DataPicDrop {
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+    flex-wrap:wrap;
+}
+
+#DataPicDrop label {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 5px;
+    background-color: #ff0c80;
+    padding: 13px;
+    border-radius: 20px;
+    position: relative;
+    top: 3px;
+}
+
+#arr {
+    height: 100px;
+}
+
+#form1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #ffeef8;
+    padding: 15px;
+    border: 1px solid #ad1457;
+    border-radius: 12px;
+}
+
+#form1 input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    font-size: 1rem;
+    color: #ae0097;
+}
+
+#form1 i {
+    font-size: 2.5rem;
+    color: #ad1457;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    #userDtailedContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    #form1{
+        width: 100%;
+        /* position: relative; */
+        left: 0px;
+        display: inline;
+    }
+
+    #DataPicDropMainDiv {
+        background-color: rgb(255, 255, 255);
+        height: 70vh;
+        padding: 10px;
+        gap: 0;
+    }
+    #arr {
+        height: 100px;
+        rotate: 90deg;
+        position: relative;
+        top: -130px;
+    }
+    .form11{
+        background-color: #fff;
+    }
+    .form12{
+        background-color: pink;
+        position: relative;
+        top: -300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Book with user detals form  */
+body {
+    background-color: #ffe6f0;
+}
+
+#form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 67%;
+    position: relative;
+    left: 12%;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff4da6;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333333;
+}
+
+#userDetails {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e6e6e6;
+}
+
+
+#userDetails i {
+    color: #ff4da6;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#userDetails img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+#userDetails input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    background: none;
+}
+
+#userDetails input::placeholder {
+    color: #b3b3b3;
+}
+
+#books {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4da6;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#books:hover {
+    background-color: #e60073;
+    box-shadow: 0 4px 10px rgba(255, 77, 166, 0.3);
+}
+
+
+
+
+/* Dynamic  data comming managment*/
+
+#userDetails1 {
+    display: flex; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 950px; 
+    flex-wrap: wrap;
+}
+#det{
+    display: flex;
+    justify-content: space-between;
+    background-color: #b400ae14;
+    padding: 10px;
+    border: 1px solid pink;
+    border-radius: 20px;
+}
+
+#imageCar {
+    width: 80%;
+    max-width: 80%; 
+    border-radius: 8px;
+    margin-right: 20px; 
+}
+
+#detailsofSelected {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+    color: #ff0000;
+}
+
+#carName {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #3300ff;
+    border: 1px solid pink;
+    padding: 10px;
+    background-color: #95002d2f;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#detailsofSelected span {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex; 
+    align-items: center; 
+    font-family: monospace;
+    font-size: 20px;
+    color: #af0077;
+}
+
+#detailsofSelected span i {
+    margin-right: 5px; 
+    font-size: 20px;
+}
+
+
+#det i{
+    font-size: 35px;
+    color: rgba(214, 0, 210, 0.381);
+}
+
+
+#userDetails input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    background: none;
+    color: #d000c2;
+}
+
+
+#books a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@media (max-width: 768px) {
+    #userDetails1{
+        display: none;
+        flex-wrap: wrap;
+    }
+
+    #imageCar{
+        width: 200px;
+        background-color: red;
+    }
+
+    #detailsofSelected{
+        width: 50vw;
+    }
+    
+    #form{
+        background-color: #ffffff;
+        width: 100%;
+        left: 0%;
+    }
+}

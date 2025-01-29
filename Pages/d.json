@@ -1,0 +1,25 @@
+{
+    "BoolCarList": [
+        {
+            "name": "Vineet Singraul",
+            "number": 2345679854,
+            "age": 20,
+            "addhar": "2345-5676-9781",
+            "carname": "Thar Mahendra",
+            "picuplocation": "Bhopal",
+            "droplocation": "Indore",
+            "image": "/Image/c2.png",
+            "Distance": "12km"
+        },
+        {
+            "name": "Rajesh Kumar",
+            "number": 9876543210,
+            "age": 35,
+            "addhar": "1234-5678-9101",
+            "carname": "Maruti Swift",
+            "picuplocation": "Delhi",
+            "droplocation": "Agra",
+            "image": "/Image/c3.png",
+            "Distance": "200km"
+        } ]
+}

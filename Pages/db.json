@@ -1,0 +1,257 @@
+{
+  "BoolCarList": [
+    {
+      "name": "Rajesh Kumar",
+      "number": 9876543210,
+      "age": 35,
+      "addhar": "1234-5678-9101",
+      "carname": "Maruti Swift",
+      "picuplocation": "Delhi",
+      "droplocation": "Agra",
+      "image": "./Image/c3.png",
+      "Distance": "200km",
+      "id": "8453"
+    },
+    {
+      "name": "Pooja Sharma",
+      "number": 9988776655,
+      "age": 29,
+      "addhar": "5678-1234-9101",
+      "carname": "Hyundai Creta",
+      "picuplocation": "Mumbai",
+      "droplocation": "Pune",
+      "image": "./Image/c4.png",
+      "Distance": "150km",
+      "id": "08cc"
+    },
+    {
+      "name": "Rohit Verma",
+      "number": 7777888899,
+      "age": 27,
+      "addhar": "9101-1234-5678",
+      "carname": "Honda City",
+      "picuplocation": "Chennai",
+      "droplocation": "Bangalore",
+      "image": "./Image/c5.png",
+      "Distance": "345km",
+      "id": "cbdf"
+    },
+    {
+      "name": "Amit Chaturvedi",
+      "number": 1234567890,
+      "age": 40,
+      "addhar": "6789-0123-4567",
+      "carname": "Ford Endeavour",
+      "picuplocation": "Jaipur",
+      "droplocation": "Jodhpur",
+      "image": "/Image/c7.png",
+      "Distance": "340km",
+      "id": "19e6"
+    },
+    {
+      "name": "Priya Das",
+      "number": 1122334455,
+      "age": 22,
+      "addhar": "8901-2345-6789",
+      "carname": "MG Hector",
+      "picuplocation": "Kolkata",
+      "droplocation": "Durgapur",
+      "image": "./Image/c8.png",
+      "Distance": "180km",
+      "id": "5deb"
+    },
+    {
+      "name": "Karan Malhotra",
+      "number": 5544332211,
+      "age": 38,
+      "addhar": "1234-5678-9876",
+      "carname": "Toyota Fortuner",
+      "picuplocation": "Ahmedabad",
+      "droplocation": "Surat",
+      "image": "./Image/c9.png",
+      "Distance": "270km",
+      "id": "4a99"
+    },
+    {
+      "name": "Anjali Mehta",
+      "number": 6677889900,
+      "age": 25,
+      "addhar": "5678-1234-9101",
+      "carname": "Kia Seltos",
+      "picuplocation": "Patna",
+      "droplocation": "Gaya",
+      "image": "./Image/c10.png",
+      "Distance": "105km",
+      "id": "8d49"
+    },
+    {
+      "name": "Suresh Yadav",
+      "number": 3344556677,
+      "age": 45,
+      "addhar": "7890-1234-5678",
+      "carname": "Skoda Kushaq",
+      "picuplocation": "Hyderabad",
+      "droplocation": "Vijayawada",
+      "image": "./Image/c11.png",
+      "Distance": "320km",
+      "id": "72de"
+    },
+    {
+      "name": "Neha Kapoor",
+      "number": 7788990011,
+      "age": 30,
+      "addhar": "8901-5678-1234",
+      "carname": "Maruti Alto",
+      "picuplocation": "Guwahati",
+      "droplocation": "Shillong",
+      "image": "./Image/c12.png",
+      "Distance": "100km",
+      "id": "8f13"
+    },
+    {
+      "name": "Arjun Reddy",
+      "number": 1231231231,
+      "age": 28,
+      "addhar": "2345-7890-1234",
+      "carname": "Hyundai i20",
+      "picuplocation": "Vizag",
+      "droplocation": "Rajahmundry",
+      "image": "./Image/c13.png",
+      "Distance": "190km",
+      "id": "d549"
+    },
+    {
+      "name": "Komal Jain",
+      "number": 9988001122,
+      "age": 26,
+      "addhar": "3456-1234-5678",
+      "carname": "Renault Kwid",
+      "picuplocation": "Nagpur",
+      "droplocation": "Wardha",
+      "image": "./Image/c14.png",
+      "Distance": "80km",
+      "id": "aa5c"
+    },
+    {
+      "name": "Manoj Singh",
+      "number": 7766554433,
+      "age": 34,
+      "addhar": "6789-0123-4567",
+      "carname": "Volkswagen Polo",
+      "picuplocation": "Chandigarh",
+      "droplocation": "Shimla",
+      "image": "./Image/c15.png",
+      "Distance": "120km",
+      "id": "fd32"
+    },
+    {
+      "name": "Riya Goswami",
+      "number": 1122445566,
+      "age": 21,
+      "addhar": "8901-2345-6789",
+      "carname": "Honda Jazz",
+      "picuplocation": "Ranchi",
+      "droplocation": "Jamshedpur",
+      "image": "./Image/c16.png",
+      "Distance": "130km",
+      "id": "c131"
+    },
+    {
+      "name": "Shivani Gupta",
+      "number": 5544332211,
+      "age": 36,
+      "addhar": "5678-1234-9101",
+      "carname": "Maruti Ciaz",
+      "picuplocation": "Udaipur",
+      "droplocation": "Mount Abu",
+      "image": "./Image/c18.png",
+      "Distance": "165km",
+      "id": "0582"
+    },
+    {
+      "id": "351e",
+      "name": "Visal Singh",
+      "number": "2342342342",
+      "age": "20",
+      "addhar": "234465347654",
+      "picuplocation": "",
+      "droplocation": "",
+      "distance": 300
+    },
+    {
+      "id": "3b09",
+      "name": "Visal Singh",
+      "number": "2342342342",
+      "age": "20",
+      "addhar": "234465347654",
+      "picuplocation": "",
+      "droplocation": "",
+      "distance": {
+        "value": 300
+      }
+    },
+    {
+      "id": "a8b4",
+      "name": "Visal Singh",
+      "number": "2342342342",
+      "age": "20",
+      "addhar": "234465347654",
+      "picuplocation": "",
+      "droplocation": "",
+      "distance": {}
+    },
+    {
+      "id": "ac75",
+      "name": "Visal Singh",
+      "number": "2342342342",
+      "age": "20",
+      "addhar": "234465347654",
+      "picuplocation": "",
+      "droplocation": "",
+      "Distance": {}
+    },
+    {
+      "id": "1afc",
+      "name": "Visal Singh",
+      "number": "2342342342",
+      "age": "20",
+      "addhar": "234465347654",
+      "picuplocation": "",
+      "droplocation": "",
+      "Distance": "300"
+    },
+    {
+      "id": "626f",
+      "name": "Visal Singh",
+      "number": "2342342342",
+      "age": "20",
+      "addhar": "234465347654",
+      "carname": "Maruti",
+      "picuplocation": "",
+      "droplocation": "",
+      "Distance": "300"
+    },
+    {
+      "id": "87ce",
+      "name": "Visal Singh",
+      "number": "2342342342",
+      "age": "20",
+      "addhar": "234465347654",
+      "carname": "Maruti",
+      "picuplocation": "",
+      "droplocation": "",
+      "Distance": "300"
+    },
+    {
+      "id": "c265",
+      "name": "Visal Singh",
+      "number": "2342342342",
+      "age": "20",
+      "addhar": "234465347654",
+      "carname": "Maruti",
+      "picuplocation": "",
+      "droplocation": "",
+      "Distance": "300"
+    }
+  ]
+}
