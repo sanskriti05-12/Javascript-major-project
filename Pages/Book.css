@@ -3,7 +3,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #ffeef8;
     /* Soft pink background */
-    color: #3e2723;
+    /* color: #3e2723; */
+    color: #ae0097;
     /* Dark brown text for better contrast */
     line-height: 1.6;
 }
